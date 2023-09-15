@@ -15,8 +15,6 @@ const Header = () => {
     setCookieToken(getCookie("token"));
     setCookieGit(getCookie("next-auth.csrf-token"));
   };
-  console.log(document.cookie);
-  console.log(getCookie("next-auth.csrf-token"));
 
   return (
     <header id="navbar" className="flex w-full bg-white py-6">
