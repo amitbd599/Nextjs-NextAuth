@@ -32,31 +32,31 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="navlink" href="contact.html">
+                <Link className="navlink" href="#">
                   Blog
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="navlink" href="contact.html">
+                <Link className="navlink" href="#">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="navlink" href="contact.html">
+                <Link className="navlink" href="#">
                   Service
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="navlink" href="contact.html">
+                <Link className="navlink" href="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
             <div>
               {!!cookieToken || !!cookieGit ? (
-                <button className="myBtn" onClick={logoutControl}>
+                <span className="myBtn" onClick={logoutControl}>
                   Logout
-                </button>
+                </span>
               ) : (
                 <Link href={"/login"} className="myBtn">
                   Login
