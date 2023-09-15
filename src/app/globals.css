@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navlink {
+  @apply text-[16px] font-medium hover:text-theme transition-all duration-300;
+}
+.myBtn {
+  @apply font-medium text-white bg-[#9333ea] hover:bg-[#7e22ce] px-[30px] py-[12px] rounded-xl;
+}
